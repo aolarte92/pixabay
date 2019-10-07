@@ -33,3 +33,6 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     ArtifactName: 'drop'
     publishLocation: 'Container'
+
+- task: WhiteSource Bolt@19
+  displayName: 'Run WhiteSource Bolt'
